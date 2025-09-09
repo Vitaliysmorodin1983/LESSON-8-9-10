@@ -1,0 +1,37 @@
+
+## 3. Файл `.gitignore`
+
+```gitignore
+# Allure
+allure-results/
+allure-report/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Screenshots
+screenshots/
