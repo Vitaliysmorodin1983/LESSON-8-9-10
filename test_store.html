@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Магазин</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+        .search { display: flex; gap: 10px; }
+        .products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .product { border: 1px solid #ddd; padding: 15px; border-radius: 5px; }
+        .cart { margin-top: 30px; }
+        .cart-item { border-bottom: 1px solid #eee; padding: 10px 0; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Магазин</h1>
+        <div>
+            <button class="login-btn">Войти</button>
+            <button class="cart-icon">Корзина (0)</button>
+        </div>
+    </div>
+
+    <div class="search">
+        <input type="text" id="search" placeholder="Поиск товаров...">
+        <button class="search-btn">Найти</button>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <h3 class="product-title">Ноутбук</h3>
+            <p class="product-price">50 000 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="product">
+            <h3 class="product-title">Телефон</h3>
+            <p class="product-price">25 000 ₽</p>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+    </div>
+
+    <div class="cart" style="display: none;">
+        <h2>Корзина</h2>
+        <div class="cart-items">
+            <div class="cart-item">
+                <span class="item-name">Ноутбук</span>
+                <span class="item-price">50 000 ₽</span>
+                <button class="remove-btn">Удалить</button>
+            </div>
+        </div>
+        <p class="total-amount">Итого: 50 000 ₽</p>
+        <button class="checkout-btn">Оформить заказ</button>
+    </div>
+
+    <div class="empty-cart-message" style="display: none;">
+        <p>Корзина пуста</p>
+    </div>
+</body>
+</html>
